@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Peehu Rawat | Contact</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    :root {
+      --accent-start: #7f00ff;
+      --accent-end: #e100ff;
+      --bg: #f3e5f5;
+      --fg: #3d2c41;
+      --card-bg: #ffffff;
+      --input-bg: #f8f0fa;
+      --input-border: #ccc;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: var(--bg);
+      color: var(--fg);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    h1 {
+      font-family: 'Cinzel', serif;
+      font-size: 2.5rem;
+      color: var(--accent-start);
+    }
+
+    p.subtitle {
+      margin-top: 0.5rem;
+      font-size: 1.1rem;
+      opacity: 0.8;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+    }
+
+    .card {
+      background: var(--card-bg);
+      border-radius: 20px;
+      padding: 2rem;
+      flex: 1 1 280px;
+      max-width: 480px;
+      box-shadow: 0 0 15px #e1bee7;
+      color: var(--fg);
+    }
+
+    .card h2 {
+      font-family: 'Cinzel', serif;
+      margin-bottom: 1rem;
+      color: var(--accent-end);
+    }
+
+    .info-item {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin: 0.8rem 0;
+      font-size: 1rem;
+    }
+
+    .info-item i {
+      font-size: 1.2rem;
+      color: var(--accent-end);
+    }
+
+    .info-item a {
+      color: var(--fg);
+      text-decoration: none;
+    }
+
+    .info-item a:hover {
+      text-decoration: underline;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    input,
+    textarea {
+      background: var(--input-bg);
+      border: 2px solid var(--input-border);
+      border-radius: 12px;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      color: var(--fg);
+      font-size: 1rem;
+      resize: none;
+      transition: border 0.3s;
+    }
+
+    input:focus,
+    textarea:focus {
+      outline: none;
+      border-color: var(--accent-end);
+      box-shadow: 0 0 10px #e100ff50;
+    }
+
+    button {
+      background: linear-gradient(to right, var(--accent-start), var(--accent-end));
+      border: none;
+      border-radius: 30px;
+      padding: 1rem 2rem;
+      font-size: 1rem;
+      color: #fff;
+      cursor: pointer;
+      font-family: 'Cinzel', serif;
+      letter-spacing: 1px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px #e100ff80;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem 1rem;
+      font-size: 0.9rem;
+      opacity: 0.7;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Get in Touch</h1>
+    <p class="subtitle">I’d love to hear from you</p>
+  </header>
+
+  <div class="container">
+    <!-- Contact Info Card -->
+    <div class="card">
+      <h2>Contact Info</h2>
+      <div class="info-item"><i class="fas fa-envelope"></i><a href="mailto:rawatpeehu09@gmail.com">rawatpeehu09@gmail.com</a></div>
+      <div class="info-item"><i class="fas fa-phone"></i><a href="tel:+918295105781">+91 82951 05781</a></div>
+      <div class="info-item"><i class="fas fa-map-marker-alt"></i><span>Bilaspur, Haryana</span></div>
+      <div class="info-item"><i class="fab fa-github"></i><a href="https://github.com/peehurawat" target="_blank">github.com/peehurawat</a></div>
+      <div class="info-item"><i class="fab fa-linkedin"></i><a href="https://www.linkedin.com/in/peehu-rawat-74a641322" target="_blank">linkedin.com/in/peehu-rawat</a></div>
+    </div>
+
+    <!-- Message Form Card -->
+    <div class="card">
+      <h2>Send a Message</h2>
+      <form action="https://formsubmit.co/rawatpeehu09@gmail.com" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+        <input type="hidden" name="_captcha" value="false">
+
+      </form>
+
+    </div>
+  </div>
+
+
+  <footer>
+    &copy; 2025 Peehu Rawat
+  </footer>
+</body>
+</html>

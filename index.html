@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Peehu Rawat | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Poppins&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: linear-gradient(to right, #f3e5f5, #fce4ec);
+      --accent-start: #7f00ff;
+      --accent-end: #e100ff;
+      --text: #3d2c41;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .navbar {
+      width: 100%;
+      background: linear-gradient(to right, #7f00ff, #e100ff);
+      padding: 1rem 0;
+      margin-bottom: 2rem;
+      box-shadow: 0 2px 10px #c084fc88;
+    }
+
+    .navbar ul {
+      list-style: none;
+    }
+
+    .navbar li {
+      display: inline-block;
+      margin: 0 1.5rem;
+    }
+
+    .navbar a {
+      text-decoration: none;
+      font-family: 'Cinzel', serif;
+      font-size: 1.1rem;
+      color: white;
+      transition: color 0.3s;
+    }
+
+    .navbar a:hover {
+      color: #fce4ec;
+    }
+
+    .hero-img {
+      width: 250px;
+      max-width: 90%;
+      border-radius: 50%;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 0 20px #d1c4e9;
+    }
+
+    h1 {
+      font-family: 'Cinzel', serif;
+      font-size: 2.5rem;
+      background: linear-gradient(135deg, var(--accent-start), var(--accent-end));
+      -webkit-background-clip: text;
+      color: transparent;
+      animation: typing 4s steps(20) infinite alternate;
+      border-right: 2px solid #7f00ff;
+      white-space: nowrap;
+      overflow: hidden;
+      width: 0;
+      margin: 0 auto 1rem;
+    }
+
+    @keyframes typing {
+      from { width: 0; }
+      to { width: 18ch; }
+    }
+
+    p {
+      font-size: 1.1rem;
+      max-width: 700px;
+      margin: 1.5rem auto;
+      line-height: 1.6;
+    }
+
+    .btn {
+      display: inline-block;
+      margin: 0.5rem;
+      padding: 12px 30px;
+      font-size: 1rem;
+      text-decoration: none;
+      color: white;
+      font-family: 'Cinzel', serif;
+      background: linear-gradient(135deg, var(--accent-start), var(--accent-end));
+      border-radius: 30px;
+      box-shadow: 0 0 10px #e1bee7;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 18px #d500f9a1;
+    }
+
+    .skills, .projects-preview, .quote {
+      margin: 3rem auto;
+      max-width: 800px;
+    }
+
+    .skills h2, .projects-preview h2 {
+      font-family: 'Cinzel', serif;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: var(--accent-start);
+    }
+
+    .skills ul {
+      list-style-type: none;
+      padding: 0;
+      font-size: 1rem;
+    }
+
+    .skills li {
+      margin: 0.7rem 0;
+    }
+
+    .projects-preview .project-cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      justify-content: center;
+      margin-top: 1.5rem;
+    }
+
+    .project-card {
+      background: white;
+      color: var(--text);
+      padding: 1.2rem;
+      border-radius: 15px;
+      box-shadow: 0 0 10px #e1bee7;
+      max-width: 250px;
+      flex: 1 1 200px;
+    }
+
+    .project-card h3 {
+      font-family: 'Cinzel', serif;
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+      color: var(--accent-end);
+    }
+
+    .quote {
+      font-style: italic;
+      font-size: 1.1rem;
+      color: #6a1b9a;
+      font-family: 'Cinzel', serif;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="cv.html">CV</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <img src="1.svg" alt="Coding Illustration" class="hero-img" />
+
+  <h1>Hi, I'm Peehu</h1>
+
+  <p>
+    A passionate B.Tech CSE student on a mission to turn imagination into innovation.<br>
+    From front-end aesthetics to backend logic, I enjoy building digital experiences that feel magical and meaningful.
+  </p>
+
+  <a href="about.html" class="btn">About Me</a>
+  <a href="contact.html" class="btn">Let's Talk</a>
+  <a href="projects.html" class="btn">My Projects</a>
+  <a href="cv.html" class="btn">My CV</a>
+
+  <section class="skills">
+    <h2>What I Do</h2>
+    <ul>
+      <li><strong>Web Design:</strong> Crafting beautiful, user-friendly websites with HTML, CSS, and JavaScript.</li>
+      <li><strong>Programming:</strong> Writing efficient code in C, C++, Python & exploring backend technologies.</li>
+      <li><strong>Creative Projects:</strong> From portfolio sites to a life changing website!</li>
+    </ul>
+  </section>
+
+  <section class="projects-preview">
+    <h2>Mini Projects Preview</h2>
+    <div class="project-cards">
+      <div class="project-card">
+        <h3>Portfolio Website</h3>
+        <p>My personal space on the web — designed with love, code, and curiosity.</p>
+      </div>
+      <div class="project-card">
+        <h3>MindBud (In Progress)</h3>
+        <p>A mental health-focused platform with chat, moodboard, and login system.</p>
+      </div>
+    </div>
+  </section>
+
+  <blockquote class="quote">
+    “Embrace growth, cherish the journey, and find harmony in every moment.” – Peehu
+  </blockquote>
+
+</body>
+</html>
